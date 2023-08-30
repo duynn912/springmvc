@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	
+	<!-- apply web template -->
+	<!-- doi voi user thi se hien thi bang ten mien url thuc (/*) -->
+	<decorator name="web" page="web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<!-- doi voi admin thi se hien thi bang quan-tri (/quan-tri*) -->
+	<decorator name="admin" page="admin.jsp">
+		<pattern>/quan-tri*</pattern>
+	</decorator>
+	
+	<decorator name="login" page="login.jsp">
+		<pattern>/dang-nhap</pattern>
+	</decorator>
+	
+</decorators>
